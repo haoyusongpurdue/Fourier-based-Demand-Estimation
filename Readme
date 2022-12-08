@@ -1,1 +1,3 @@
-The Fourier-based-demand-estimation approach contains two phases. 
+The Fourier-based-demand-estimation approach contains two phases. In the first phase, we use an active learning algorithm to identify all Fourier bases 
+whose L1 norm are big enough and turn them into trees. In the second phases, we sample more trees uniformly and combine then with the list of trees 
+obtained in the first phase. Then we run a linear regression problem on those trees to solve their coefficients. 
