@@ -3,8 +3,15 @@ identify all Fourier bases whose L1 norm are big enough and turn them into trees
 uniformly and combine then with the list of trees obtained in the first phase. Then we run a linear regression problem on those 
 trees to solve their coefficients. 
 
-We mainly want to improve upon the RTS(random tree sampling) method in the DF paper. The paper proposes two methods. The first 
-method is calld HCG(heuristic column generation), for which there is no theoretical guarantee. The second method is 
+We mainly want to improve upon the RTS method in the DF paper. The paper proposes two methods. The first method is calld HCG
+(heuristic column generation), for which there is no theoretical guarantee. The second method is called RTS(randomized tree sampling). 
+For this method, they first sample a large number of trees from a distribution P (often the uniform distribution) and then identify the 
+coefficient of those trees. The paper shows that the error of the prediction scales with the discrepancy between P and the acutal 
+distribution of trees. In particular, when P is uniform, the method may fail to recover those trees with large coefficients. We resolve 
+this issue by first using an active learning algorithm to identity those significant trees. 
+
+
+
 
 
 
