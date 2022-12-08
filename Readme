@@ -10,7 +10,15 @@ coefficient of those trees. The paper shows that the error of the prediction sca
 distribution of trees. In particular, when P is uniform, the method may fail to recover those trees with large coefficients. We resolve 
 this issue by first using an active learning algorithm to identity those significant trees. 
 
-The following methods will be implemented. 
+The following methods and classes will be implemented. 
+
+1. trees
+standard trees with a few extra features. 
+need to ensure that a product never appears two times in a path. 
+need to ensure that the final choice selected at the leaf node must have appear before in the path. 
+
+evaluate: 
+
 
 
 
