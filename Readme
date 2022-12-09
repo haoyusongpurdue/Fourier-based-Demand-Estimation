@@ -1,7 +1,7 @@
 The Fourier-based-demand-estimation approach contains two phases. In the first phase, we use an active learning algorithm to 
-identify all Fourier bases whose L1 norm are big enough and turn them into trees. In the second phases, we sample more trees 
-uniformly and combine then with the list of trees obtained in the first phase. Then we run a simple linear regression problem on those 
-trees to solve their coefficients. 
+identify all Fourier bases whose L1 norm are big enough and turn them into indicator functions. In the second phases, we sample more trees 
+uniformly and combine then with the list of indicator functions obtained in the first phase. Then we run a simple linear regression problem on 
+those trees to solve their coefficients. 
 
 We mainly want to improve upon the RTS method in the DF paper. The paper proposes two methods. The first method is calld HCG
 (heuristic column generation), for which there is no theoretical guarantee. The second method is called RTS(randomized tree sampling). 
