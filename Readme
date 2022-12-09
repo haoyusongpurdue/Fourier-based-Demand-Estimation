@@ -24,6 +24,15 @@ revenue: multiplying price with the result of evaluate.
 
 2. forests
 a collection of trees T. Each tree t has a probability p_t. 
+evaluate: simply summing the result of every individual tree. 
+revenue: same as above
+
+We also need a method to generate random trees. 
+
+
+3.Fourier stuff
+
+
 
 
 
