@@ -19,8 +19,12 @@ need to ensure that the final choice selected at the leaf node must have appear 
 
 evaluate: input is the choice set. At the current node, if node i is present, go to left; otherwise go to right. When at leaf node l, 
 output l if l is present. Otherwise output 0 i.e. no buy. 
+revenue: multiplying price with the result of evaluate. 
+
 
 2. forests
+a collection of trees T. Each tree t has a probability p_t. 
+
 
 
 
