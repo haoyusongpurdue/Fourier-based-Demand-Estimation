@@ -27,10 +27,13 @@ a collection of trees T. Each tree t has a probability p_t.
 evaluate: simply summing the result of every individual tree. 
 revenue: same as above
 
-We also need a method to generate random trees. 
-
+We also need a method to generate K random trees. 
 
 3.Fourier stuff
+Most code has already been implemented. The algorithm contains three building blocks. The first building block is hashing. We select a random matrix A 
+and get a subspace {x|Ax = b} = a + kernel(A) where Aa = b. The next building block is evaluating L1 sum of the subspace. 
+The third building block is measurement.
+
 
 
 
